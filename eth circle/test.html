@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ETH Circle</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- 'Roboto' -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+
+    <!-- Oswald -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="test.css">
+     <script type="text/javascript" src="http(s)://www.google.com/jsapi"></script>
+  </head>
+  <body>
+    <div id="navbar">
+      <strong id="title">ETH CIRCLE</strong>
+    </div>
+    <div id="map"></div>
+    <!-- Friendlist -->
+    <div id="friendList">
+        <a href="#" id="addFriendButton" class="blueButton">
+          <i id="addFriendIcon" class="blueIcon fa fa-user-plus"></i>
+        </a>
+        <h1>Friends</h1>
+        <div id="friends">
+          <div class="friend">
+              <img class="avatar erikImg"></img>
+              <h2>Erik Linder-Norén</h2>
+          </div>
+          <div class="friend">
+              <img class="avatar stevenImg"></img>
+              <h2>Steven Yoon</h2>
+          </div>
+          <div class="friend">
+              <img class="avatar iremImg"></img>
+              <h2>Irem Öz</h2>
+          </div>
+          <div class="friend">
+              <img class="avatar andreaImg"></img>
+              <h2>Andrea Canonica</h2>
+          </div>
+          <div class="friend">
+              <img class="avatar abhaImg"></img>
+              <h2>Abha Ramchandani</h2>
+          </div>
+        </div>
+    </div>
+    <!-- Eventlist -->
+    <div id="eventList">
+        <a href="#" id="addEventMenuButton" class="blueButton">
+          <i id="addEventIcon" class="blueIcon fa fa-plus"></i>
+        </a>
+        <h1>Events</h1>
+        <div id="events">
+          <div class="event">
+              <img class="avatar chocolateImg"></img>
+              <h2>Free Chocolate!</h2>
+          </div>
+        </div>
+    </div>
+
+    <!-- Popup at the bottom of the screen when someones face is clicked -->
+    <div id="friendWrapper">
+      <div id="friendCard">
+        <img id="friendImg"></img>
+        <p id="friendName"></p>
+        <a id="contactButton"><i id="contactIcon" class="fa fa-comment"></i></a>
+      </div>
+    </div>
+    <!-- Popup at the bottom of the screen when event is clicked -->
+    <div id="eventWrapper">
+      <div id="eventCard">
+        <img id="eventImg"></img>
+        <p id="eventName"></p>
+        <p id="eventDescription"></p>
+        <a id="joinButton"><i id="joinIcon" class="fa fa-heart"></i></a>
+      </div>
+    </div>
+    <!-- Shows the friendlist -->
+    <a href="#" id="menuButton" class="blueButton">
+        <i class="blueIcon fa fa-bars"></i>
+    </a>
+    <!-- Plus button -->
+    <a href="#" id="addEventButton" class="blueButton">
+        <i class="blueIcon fa fa-plus"></i>
+    </a>
+    <!-- Shows the eventList -->
+    <a href="#" id="eventListButton" class="blueButton">
+        <i class="blueIcon fa fa-calendar-plus-o"></i>
+    </a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    <script src="test.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqhwMbnamF4pTOKgG93qmtQyl3S0LN4cE&callback=initMap"
+        async defer></script>
+  </body>
+</html>
